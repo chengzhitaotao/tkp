@@ -1,0 +1,2083 @@
+[ 2016-06-20T09:00:06+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011001s ]
+
+[ 2016-06-20T09:03:55+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-06-20T09:03:58+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-20T09:04:00+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0030s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0010s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0010s ]
+
+[ 2016-06-20T09:18:56+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-06-20T09:18:59+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-06-20T09:19:01+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0060s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0010s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T09:22:42+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T09:22:44+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T09:27:40+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.016600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T09:27:41+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T10:36:41+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadAllClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+ERR: 非法操作:loadAllClasses
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\App.class.php:124) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\App.class.php:124) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2016-06-20T10:37:05+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015600s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0156s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `exam` WHERE ( classid in() and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `exam` WHERE ( classid in() and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' ) 
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2016-06-20T11:02:17+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadAllClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+ERR: 非法操作:loadAllClasses
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\App.class.php:124) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\App.class.php:124) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2016-06-20T11:02:32+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-06-20T11:02:35+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-06-20T11:02:37+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0050s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0020s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0010s ]
+
+[ 2016-06-20T11:02:42+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0060s ]
+NOTIC: [8] Array to string conversion D:\phpwebapp\tkp\Application\Home\Controller\ClassController.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0060s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `exam` WHERE ( classid in(Array) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' ) 
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `exam` WHERE ( classid in(Array) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' ) 
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2016-06-20T11:02:48+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0050s ]
+NOTIC: [8] Array to string conversion D:\phpwebapp\tkp\Application\Home\Controller\ClassController.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0040s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `exam` WHERE ( classid in(Array) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' ) 
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `exam` WHERE ( classid in(Array) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' ) 
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2016-06-20T11:03:32+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-20T11:03:34+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0060s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0040s ]
+
+[ 2016-06-20T11:03:43+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0030s ]
+NOTIC: [8] Array to string conversion D:\phpwebapp\tkp\Application\Home\Controller\ClassController.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0070s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `exam` WHERE ( classid in(Array) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' ) 
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `exam` WHERE ( classid in(Array) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' ) 
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2016-06-20T11:06:08+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadAllClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0030s ]
+ERR: 非法操作:loadAllClasses
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\App.class.php:124) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\App.class.php:124) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2016-06-20T11:06:19+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0050s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `exam` WHERE ( classid in() and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `exam` WHERE ( classid in() and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' ) 
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2016-06-20T11:07:00+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday?cids=1,2,3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(1,2,3) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-06-20T11:07:31+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday?cids=1,2,3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(1,2,3) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T11:08:09+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday?cids=1,2,3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(1,2,3) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `class` WHERE ( cid in(1,2) )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017600s ]
+
+[ 2016-06-20T11:08:53+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday?cids=1,2,3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(1,2,3) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `class` WHERE ( cid in(1,2) )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T11:08:54+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday?cids=1,2,3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(1,2,3) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `class` WHERE ( cid in(1,2) )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T11:09:21+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T11:09:24+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0020s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0010s ]
+
+[ 2016-06-20T11:09:31+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion D:\phpwebapp\tkp\Application\Home\Controller\ClassController.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `exam` WHERE ( classid in(Array) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' ) 
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `exam` WHERE ( classid in(Array) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' ) 
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2016-06-20T11:11:08+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T11:11:10+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0020s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T11:11:15+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(1,2) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `class` WHERE ( cid in(1,2) )  [ RunTime:0.0156s ]
+
+[ 2016-06-20T11:11:50+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.016600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.017600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-06-20T11:11:52+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T11:11:56+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(1,2) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `class` WHERE ( cid in(1,2) )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T12:57:59+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0176s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T12:58:01+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T12:59:02+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T12:59:04+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T13:06:04+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.016600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T13:06:06+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T13:09:11+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T13:09:14+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0020s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T13:13:24+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015601s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T13:13:26+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T13:17:07+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.017600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-06-20T13:17:09+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid limit 0,10 [ RunTime:0.0010s ]
+
+[ 2016-06-20T15:18:35+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T15:18:36+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0050s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0020s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0020s ]
+
+[ 2016-06-20T15:26:48+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-20T15:26:50+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:28:58+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T15:29:00+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:29:51+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.016600s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T15:29:53+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0020s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0010s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:31:49+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T15:31:51+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:31:54+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015601s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(1,2) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `class` WHERE ( cid in(1,2) )  [ RunTime:0.0156s ]
+
+[ 2016-06-20T15:35:23+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017601s ]
+
+[ 2016-06-20T15:35:25+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0156s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:35:28+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(1,2) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `class` WHERE ( cid in(1,2) )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:43:18+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.016600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-06-20T15:43:21+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0176s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:43:36+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(4,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0156s ]
+
+[ 2016-06-20T15:43:39+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:46:44+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(4,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:46:47+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:48:25+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(4,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:48:28+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:49:42+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:50:05+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017600s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=4 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:51:05+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T15:51:07+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:51:13+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(2,3) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `class` WHERE ( cid in(2) )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:51:20+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(1,3) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `class` WHERE ( cid in(1) )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:51:26+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(3,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:51:29+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:51:54+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(3,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:51:58+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015600s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:53:11+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-20T15:53:13+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:53:18+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(4,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:53:21+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:53:32+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-20T15:53:34+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0010s ]
+
+[ 2016-06-20T15:53:38+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(4,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:53:42+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:57:36+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T15:57:38+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0156s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:57:42+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(4,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T15:57:46+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:00:05+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:00:07+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0156s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:00:10+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(4,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:00:14+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:00:17+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=4 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:00:31+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `class` WHERE ( cid in() ) 
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2016-06-20T16:11:54+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=6,7&combinedClassid=6&combinedHeaderid=6&combinedManagerid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(6,7) )  [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0156s ]
+
+[ 2016-06-20T16:12:08+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=6,7&combinedClassid=6&combinedHeaderid=6&combinedManagerid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(6,7) )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:12:47+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=6,7&combinedClassid=6&combinedHeaderid=6&combinedManagerid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(6,7) )  [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:12:58+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=6,7&combinedClassid=6&combinedHeaderid=6&combinedManagerid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(6,7) )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:13:00+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=6,7&combinedClassid=6&combinedHeaderid=6&combinedManagerid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(6,7) )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:13:02+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=6,7&combinedClassid=6&combinedHeaderid=6&combinedManagerid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(6,7) )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:13:51+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=6,7&combinedClassid=6&combinedHeaderid=6&combinedManagerid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpwebapp\tkp\Application\Home\Controller\ClassController.class.php 第 124 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:14:24+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=4,5&combinedClassid=6&combinedHeaderid=6&combinedManagerid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpwebapp\tkp\Application\Home\Controller\ClassController.class.php 第 124 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:15:15+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=4,5&combinedClassid=6&combinedHeaderid=6&combinedManagerid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(4,5) )  [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:16:04+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=4,5&combinedClassid=4&combinedHeaderid=6&combinedManagerid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(4,5) )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-06-20T16:18:28+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=4,5&combinedClassid=4&combinedHeaderid=6&combinedManagerid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(4,5) )  [ RunTime:0.0000s ]
+SQL: UPDATE `class` SET `name`='u23',`status`='3',`headerid`='3',`managerid`='7',`stucount`='0',`remark`=NULL WHERE `cid` = 5 [ RunTime:0.0000s ]
+SQL: update tb_user set classid=4 where classid=5 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `class` WHERE ( cid=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `class` SET `name`='u22',`status`='1',`headerid`='6',`managerid`='4',`stucount`='0',`remark`=NULL WHERE `cid` = 4 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:20:41+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017600s ]
+
+[ 2016-06-20T16:20:43+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015600s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:20:56+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(4,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:21:00+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:21:03+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=4 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:21:15+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0166s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `class` WHERE ( cid in() ) 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015601s ]
+
+[ 2016-06-20T16:22:06+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0050s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `class` WHERE ( cid in() ) 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:24:55+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=4,5&combinedClassid=5&combinedHeaderid=3&combinedManagerid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(4,5) )  [ RunTime:0.0000s ]
+SQL: UPDATE `class` SET `name`='u22',`status`='3',`headerid`='6',`managerid`='4',`stucount`='0',`remark`=NULL WHERE `cid` = 4 [ RunTime:0.0000s ]
+SQL: update tb_user set classid=5 where classid=4 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-06-20T16:27:34+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses?cids=4,5&combinedClassid=5&combinedHeaderid=3&combinedManagerid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(4,5) )  [ RunTime:0.0000s ]
+SQL: UPDATE `class` SET `name`='u22',`status`='3',`headerid`='6',`managerid`='4',`stucount`='0',`remark`=NULL WHERE `cid` = 4 [ RunTime:0.0000s ]
+SQL: update tb_user set classid=5 where classid=4 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `class` WHERE ( cid=5 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:28:43+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-20T16:28:45+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0156s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:28:56+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(4,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:28:59+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=4 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:29:02+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:29:24+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `class` WHERE ( cid in() ) 
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0176s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\phpwebapp\tkp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\phpwebapp\tkp\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2016-06-20T16:31:03+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:31:05+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:34:12+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(4,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:34:15+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:34:19+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=4 )  [ RunTime:0.0176s ]
+
+[ 2016-06-20T16:34:25+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(4,5) )  [ RunTime:0.0000s ]
+SQL: UPDATE `class` SET `name`='u22',`status`='3',`headerid`='6',`managerid`='4',`stucount`='0',`remark`=NULL WHERE `cid` = 4 [ RunTime:0.0000s ]
+SQL: update tb_user set classid=5 where classid=4 [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `class` WHERE ( cid=5 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE `class` SET `name`='u23',`status`='1',`headerid`='3',`managerid`='7',`stucount`='2',`remark`=NULL WHERE `cid` = 5 [ RunTime:0.0176s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:35:11+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-20T16:35:14+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0020s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:37:28+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/classManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015600s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-20T16:37:30+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/loadClassByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017600s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:37:35+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/checkExamToday
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `exam` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `exam` WHERE ( classid in(4,5) and beginTime between '2016-06-20 00:00:00' and '2016-06-20 23:59:59' )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:37:38+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=4 )  [ RunTime:0.0176s ]
+
+[ 2016-06-20T16:37:41+08:00 ] 127.0.0.1 /tkp/index.php/Home/User/loadAllHeader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`trueName` FROM `tb_user` WHERE ( userType=3 )  [ RunTime:0.0000s ]
+
+[ 2016-06-20T16:37:46+08:00 ] 127.0.0.1 /tkp/index.php/Home/Class/hebingClasses
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `class` WHERE ( cid in(4,5) )  [ RunTime:0.0000s ]
+SQL: UPDATE `class` SET `name`='u22',`status`='2',`headerid`='6',`managerid`='4',`stucount`='0',`remark`=NULL WHERE `cid` = 4 [ RunTime:0.0000s ]
+SQL: update tb_user set classid=5 where classid=4 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `class` WHERE ( cid=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `class` SET `name`='u23',`status`='1',`headerid`='6',`managerid`='7',`stucount`='2',`remark`=NULL WHERE `cid` = 5 [ RunTime:0.0000s ]
+SQL: select count(*) as cc from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid [ RunTime:0.0000s ]
+SQL: select c.cid,c.name,c.classtype,c.status,
+            c.createtime,c.begintime,c.endtime,u1.truename headername,
+            u2.trueName managername,c.stucount,c.remark from class c,tb_user u1,tb_user u2 where c.headerid=u1.uid and u2.uid=c.managerid order by cid limit 0,10 [ RunTime:0.0000s ]
+
+[ 2016-06-20T17:00:42+08:00 ] 127.0.0.1 /tkp/index.php/Home/Menu/menuManage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-06-20T17:00:43+08:00 ] 127.0.0.1 /tkp/index.php/Home/Menu/loadMenuByPage?pageNo=1&pageSize=10&page=1&rows=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+

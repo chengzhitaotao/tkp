@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<p>reg模板</p>
+		{$ttt}<br/>
+		{$arr.0}---{$arr[1]}<br />
+		{$arr2.aa}---{$arr2['bb']}<br />
+		{$data.0.rid}---{$data[0][name]}<br />
+		{$r:rid}--{$r->name}<br />
+		{$Think.server.http_user_agent}<br />
+		{$Think.get.rid}--{$Think.get.name}<br />
+		{$host}<br />
+		{$str|md5=###}<br />
+		{$str|substr=0,3}--{$str|substr=###,0,5}<br />
+		{:substr($str,0,4)}<br />
+		{$str|default="你好!"}<br />
+		{$i+$j}--{$i-$j}--{$i/$j}--{$i*$j}--{$i%$j}--{$j++}--{++$j}<br />
+		{$i==4?"正确":"错误"}<br />
+		
+		<table border=1 cellspacing="0" bordercolor="blue">
+			<tr>
+				<td>编号</td>
+				<td>名称</td>
+			</tr>
+			
+			<volist name="data" id="role" mod="2" empty="$emp" key="i">
+				<eq name="mod" value="0">
+					<tr style="background-color: gray;">
+						<td>
+							<if condition="$role.rid eq 1">编号1
+								<elseif condition="$role.rid eq 2"/>编号2
+								<elseif condition="$role.rid eq 3"/>编号3
+								<else/>编号4
+							</if>
+						</td>
+						<td>{$role.name}</td>
+					</tr>
+				</eq>
+				<eq name="mod" value="1">
+					<tr style="background-color: orange;">
+						<td>
+							<if condition="$role.rid eq 1">编号1
+								<elseif condition="$role.rid eq 2"/>编号2
+								<elseif condition="$role.rid eq 3"/>编号3
+								<else/>编号4
+							</if>
+						</td>
+						<td>{$role.name}</td>
+					</tr>
+				</eq>
+			</volist>
+			
+			<!-- 
+			<foreach name="data" item="role" key="i">
+				<eq name="i%2" value="0">
+					<tr style="background-color: gray;">
+						<td>{$role.rid}</td>
+						<td>{$role.name}</td>
+					</tr>
+				</eq>
+				<eq name="i%2" value="1">
+					<tr style="background-color: green;">
+						<td>{$role.rid}</td>
+						<td>{$role.name}</td>
+					</tr>
+				</eq>
+      		</foreach>-->
+      		  
+      		 <!--  <for start="0" end="$arrayLenth" comparison="lt"  name="i"> -->
+      		<!-- 反过来执行 -->
+      		<!--  <for start="$arrayLenth-1" end="0" comparison="egt" step="-1" name="i">-->
+      		<!-- 
+      			 <eq name="i%2" value="0">
+					<tr style="background-color: gray;">
+						<td>{$data.$i.rid}</td>
+						<td>{$data.$i.name}</td>
+					</tr>
+				</eq>
+				<eq name="i%2" value="1">
+					<tr style="background-color: green;">
+						<td>{$data.$i.rid}</td>
+						<td>{$data.$i.name}</td>
+					</tr>
+				</eq>
+			</for>
+			 -->
+			
+		</table>
+		<switch name="i">
+            <case value="1">中</case>
+            <case value="2">华</case>
+            <case value="3">人</case>
+            <case value="4">民</case>
+            <case value="5">共</case>
+            <case value="6">和</case>
+            <case value="7">国</case>
+            <default>藩夷</default>
+        </switch><br />
+        
+        <if condition="$j eq 4">你在开么子玩笑哦!</if><br />
+        <if condition="$i lt 3">你在开么子玩笑哦!<else/>这还差不多!</if><br />
+        <if condition="$j elt 2">对咯<elseif condition="$j gt 5">你在开么子玩笑哦!<else/>牙刷儿.....</if>
+        
+        
+        
+	</body>
+</html>
